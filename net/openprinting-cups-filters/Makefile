@@ -37,15 +37,14 @@ endef
 define Build/Configure
 	$(call Build/Configure/Default, \
 	--enable-imagefilters \
-	--with-pdftops=gs \
-	--with-gs-path=/usr/bin/gs \
-	--with-pdftops-path=/usr/bin/gs \
+	--with-pdftops=pdftops \
+	--with-pdftops-path=/usr/bin/pdftops \
 	--disable-gnutls \
 	--disable-openssl \
 	--disable-cdsassl \
 	--disable-ssl \
 	--disable-gssapi \
-	--disable-avahi \
+	--enable-avahi \
 	)
 endef
 
