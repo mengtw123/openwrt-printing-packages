@@ -15,7 +15,7 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=@SF/gimp-print
 PKG_MD5SUM:=36bbc136fadbbe54e5fd338a62ed3b80
 
-PKG_BUILD_DEPENDS:=gutenprint/host cups ghostscript libiconv-full
+PKG_BUILD_DEPENDS:=gutenprint/host cups libiconv-full
 HOST_BUILD_DEPENDS:=libiconv-full/host
 PKG_INSTALL:=1
 
@@ -28,7 +28,7 @@ define Package/gutenprint-cups
   CATEGORY:=Network
   TITLE:=gutenprint-cups -- Gutenprint CUPS drivers
   # XXX FIXME perl is required by cups-genppdupdate, but it needs more libs
-  DEPENDS:=+cups +libcupsimage +libiconv-full +ghostscript
+  DEPENDS:=+cups +libcupsimage +libiconv-full +perl 
   URL:=http://gimp-print.sourceforge.net/
   SUBMENU:=Printing
 endef

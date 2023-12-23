@@ -173,8 +173,13 @@ define Build/Configure
 		--enable-dnssd \
 		--enable-dbus \
 		--with-dnssd=avahi \
+		--disable-launchd \
+		--without-perl \
+		--without-python \
+		--without-php \
 		--disable-acl \
 		--disable-pam \
+		--disable-slp \
 		--with-tls=$(if $(LIBCUPS_OPENSSL),gnutls,openssl) \
 		--disable-gssapi \
 		UNAME="Linux" \
