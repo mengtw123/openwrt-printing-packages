@@ -3,8 +3,9 @@
 This is a [package feed] aiming at providing a complete printing stack
 for OpenWrt.
 
+**Using Poppler** as pdftops
+
 Notably it has:
-- Ghostscript 10.02.1
 - Gutenprint 5.3.4
 - Cups 2.4.7
 - OpenPrinting's cups-filters 1.0.37
